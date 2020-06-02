@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'lakeshore';
-    src:url('fonts/LAKESHOR-webfont.eot');
+    src:url('../fonts/LAKESHOR-webfont.eot');
     src:url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
         url('fonts/LAKESHOR-webfont.woff') format('woff'),
         url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
@@ -22,6 +22,10 @@ body {
 
     background: rgb(96, 125, 139);
     color: rgba(202, 238, 255);
+}
+
+.detail-image {
+    width: 90%;
 }
 
 .thumbnail-image {
