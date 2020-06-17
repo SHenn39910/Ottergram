@@ -28,6 +28,7 @@ body {
     width: 90%;
 }
 
+
 .thumbnail-image {
     width: 100%;
     display: block;
@@ -38,15 +39,19 @@ a {
 }
 
 .thumbnail-item{
-    display: block;
-    border: 1px solid rgb(100%, 100%, 100%);
+    display: inline-block;
+    width: 120px;
     border: 1px solid rgb(100%, 100%, 100%, 0.8);
-    margin-top: 10px;
+    border: 1px solid rgb(100%, 100%, 100%, 0.8);
+    background: blue;
 }
 
 .thumbnail-list {
     list-style: none;
     padding: 0;
+
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 .logo-text {
@@ -56,4 +61,8 @@ a {
     text-transform: uppercase;
     font-family: lakeshore;
     font-size: 37px;
+}
+
+li {
+    background: red;
 }
