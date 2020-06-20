@@ -9,6 +9,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'airstreamregular';
+    src: url('fonts/Airstream-webfont.eot');
+    src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Airstream-webfont.woff') format('woff'),
+        url('fonts/Airstream-webfont.tff') format('truetype'),
+        url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
 html, body {
     display: flex;
     flex-direction: column;
@@ -31,6 +42,19 @@ html, body {
     width: 90%;
 }
 
+.detail-image-title {
+    color: white;
+    font-size: 40px;
+    text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+}
+
+.detail-image-container {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .thumbnail-image {
     width: 100%;
@@ -43,20 +67,14 @@ a {
 
 .thumbnail-item{
     display: inline-block;
-    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
     border: 1px solid rgb(100%, 100%, 100%, 0.8);
     border: 1px solid rgb(100%, 100%, 100%, 0.8);
     background: blue;
 }
 
-.thumbnail-list {
-    flex: 0 1 auto;
-    list-style: none;
-    padding: 0;
 
-    white-space: nowrap;
-    overflow-x: auto;
-}
 
 .logo-text {
     background: white;
@@ -80,4 +98,21 @@ a {
 
 li {
     background: red;
+}
+.thumbnail-list {
+    flex: 0 1 auto; 
+    list-style: none;
+    order: 2;
+    padding: 0;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.detail-image-frame {
+    text-align: center;
+    position: relative;
 }
