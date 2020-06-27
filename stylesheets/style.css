@@ -20,6 +20,13 @@
     font-style: normal;
 }
 
+@media all and (min-width: 768px){
+    .main-content {
+        flex-direction: row;
+        overflow: hidden;
+    }
+}
+
 html, body {
     display: flex;
     flex-direction: column;
@@ -74,7 +81,7 @@ a {
 .thumbnail-item{
     display: inline-block;
     min-width: 120px;
-    max-width: 120px;
+    max-width: 260px;
     border: 1px solid rgb(100%, 100%, 100%, 0.8);
     border: 1px solid rgb(100%, 100%, 100%, 0.8);
     background: blue;
@@ -113,6 +120,9 @@ li {
     height: 25%;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    order: 0;
+    margin-left: 20px;
 
     white-space: nowrap;
     overflow-x: auto;
